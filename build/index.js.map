@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../src/",
+  "sources": [
+    "index.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;EAAA;EAEA,MAAM,CAAC,OAAP,GAAiB,QAAA,CAAC,GAAD,CAAA;AACf,QAAA;IAAA,GAAG,CAAC,SAAJ,GAAgB,OAAA,CAAQ,YAAR;IAChB,QAAA,GAAW,QAAA,CAAC,IAAD,EAAO,EAAP,CAAA;aACT,GAAG,CAAC,SAAS,CAAC,QAAd,CAAuB,IAAI,CAAC,KAA5B,EAAmC,IAAI,CAAC,MAAL,IAAe,IAAI,CAAC,GAAvD;IADS;IAEX,IAAG,GAAG,CAAC,QAAP;MACE,GAAG,CAAC,QAAQ,CAAC,EAAb,CAAgB,WAAhB,EAA6B,QAA7B;aACA,GAAG,CAAC,QAAQ,CAAC,EAAb,CAAgB,WAAhB,EAA6B,QAA7B,EAFF;;EAJe;AAFjB",
+  "sourcesContent": [
+    "'use strict'\r\n\r\nmodule.exports = (ndx) ->\r\n  ndx.validator = require 'i-validate'\r\n  validate = (args, cb) ->\r\n    ndx.validator.validate args.table, args.newObj or args.obj\r\n  if ndx.database\r\n    ndx.database.on 'preInsert', validate\r\n    ndx.database.on 'preUpdate', validate"
+  ]
+}
