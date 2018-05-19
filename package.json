@@ -1,6 +1,6 @@
 {
   "name": "ndx-validator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "database validation for ndx-framework apps",
   "main": "build/index.js",
   "scripts": {

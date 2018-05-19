@@ -1,6 +1,6 @@
 # ndx-validator
 `npm install --save ndx-validator`
-```
+```coffeescript
   validator.setValidations
     users:
       name: ->
