@@ -10,8 +10,9 @@
     };
     if (ndx.database) {
       ndx.database.on('preInsert', validate);
-      return ndx.database.on('preUpdate', validate);
+      ndx.database.on('preUpdate', validate);
     }
+    return null;
   };
 
 }).call(this);

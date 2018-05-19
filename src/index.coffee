@@ -8,3 +8,4 @@ module.exports = (ndx) ->
   if ndx.database
     ndx.database.on 'preInsert', validate
     ndx.database.on 'preUpdate', validate
+  null
